@@ -1,31 +1,11 @@
 import "./Home.css";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 
 function Home() {
     return (
-        <div className="home-container">
-            <header>
-                <div className="container header-top">
-                    <div className="logo">
-                        <div className="logo-box">SH</div>
-                        <div className="logo-text">
-                            <h1>ServiHogar Pro</h1>
-                            <p>Fontanería & Cerrajería</p>
-                        </div>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </nav>
-                    <div className="phone-button">
-                        <a href="tel:911234567"><button>📞 911 234 567</button></a>
-                    </div>
-                </div>
-            </header>
-
+        <div className="home-background">
+            <Header />
             <main>
                 <section className="hero">
                     <div className="container hero-content">
@@ -33,9 +13,9 @@ function Home() {
                             <h2>Servicios de <span className="green">Fontanería</span> y <span className="red">Cerrajería</span> Profesionales</h2>
                             <p>Soluciones rápidas y confiables para tu hogar y negocio. Más de 10 años de experiencia en reparaciones, instalaciones y emergencias.</p>
                             <div className="hero-icons">
-                                <div><span>⏰</span> 24/7 Emergencias</div>
-                                <div><span>✅</span> Garantía Total</div>
-                                <div><span>⚡</span> Atención Inmediata</div>
+                                <div>⏰ 24/7 Emergencias</div>
+                                <div>✅ Garantía Total</div>
+                                <div>⚡ Atención Inmediata</div>
                             </div>
                             <div className="hero-buttons">
                                 <a href="tel:911234567"><button className="btn-primary">📞 Llamar Ahora</button></a>
@@ -99,8 +79,54 @@ function Home() {
                         </div>
                     </div>
                 </section>
+
+                {/* SECCIÓN DE CONTACTO (la que te hice yo) */}
+                <section className="urgente">
+                    <h2>¿Necesitas ayuda urgente?</h2>
+                    <p>Contáctanos ahora y resolveremos tu problema en el menor tiempo posible</p>
+                    <a href="tel:911234567" className="boton-verde">📞 Contactar Ahora</a>
+                </section>
+
+                <section className="contacto">
+                    <h2>Contáctanos</h2>
+                    <p>Estamos aquí para ayudarte. Llámanos o escríbenos para cualquier emergencia o consulta</p>
+
+                    <div className="contenedor">
+                        <div className="info-contacto">
+                            <h3>Información de Contacto</h3>
+                            <p><strong>📞 Teléfono de Emergencia</strong><br /><span className="rojo">911 234 567</span><br />Disponible 24/7</p>
+                            <p><strong>📍 Ubicación</strong><br />Calle Principal 123<br />Madrid, España</p>
+                            <p><strong>🕒 Horarios</strong><br />Lun - Vie: 8:00 - 20:00<br />Emergencias: 24/7</p>
+                            <p><strong>✉️ Email</strong><br />info@servihogarpro.es</p>
+
+                            <div className="emergencia-box">
+                                <p><strong>¿Emergencia?</strong><br />Llámanos ahora para atención inmediata</p>
+                                <a href="tel:911234567" className="boton-verde">📞 911 234 567</a>
+                            </div>
+                        </div>
+
+                        <form className="formulario">
+                            <h3>Solicita un Presupuesto</h3>
+                            <div className="fila">
+                                <input type="text" placeholder="Tu nombre" required />
+                                <input type="tel" placeholder="Tu teléfono" required />
+                            </div>
+                            <input type="email" placeholder="tug@gmail.com" required />
+                            <select required>
+                                <option value="">Selecciona un servicio</option>
+                                <option>Fontanería</option>
+                                <option>Electricidad</option>
+                                <option>Cerrajería</option>
+                            </select>
+                            <textarea placeholder="Describe tu problema o necesidad..." rows="4" required></textarea>
+                            <button type="submit" className="boton-verde">Enviar Solicitud</button>
+                        </form>
+                    </div>
+                </section>
             </main>
-        </div>
+
+            <Footer />
+        </div >
     );
 }
 
