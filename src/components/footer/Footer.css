@@ -16,6 +16,7 @@
 
 .footer-section {
   flex: 1 1 250px;
+  background-color: #14532d;
 }
 
 .logo {
@@ -26,7 +27,7 @@
 }
 
 .logo-icon {
-  background: white;
+  background: rgb(99, 77, 77);
   color: 14532d;
   font-weight: bold;
   padding: 5px 10px;
@@ -60,6 +61,7 @@
 
 .footer-bottom {
   border-top: 1px solid #ccc;
+  background-color: #14532d;
   margin-top: 30px;
   padding-top: 20px;
   display: flex;
