@@ -5,7 +5,9 @@ import Footer from "../../components/footer/Footer";
 function Home() {
     return (
         <div className="home-background">
-            <Header />
+        <div className="import-header">   
+        <Header />
+        </div>
             <main>
                 <section className="hero">
                     <div className="container hero-content">
@@ -39,8 +41,10 @@ function Home() {
 
                 <section className="services">
                     <div className="container">
+                        <div className="p-h2">
                         <h2>Nuestros <span className="green">Servicios</span></h2>
                         <p>Ofrecemos soluciones integrales en fontanería y cerrajería con la máxima calidad y rapidez</p>
+                        </div>
                         <div className="services-columns">
                             <div className="column">
                                 <h3 className="green">Fontanería</h3>
@@ -79,14 +83,6 @@ function Home() {
                         </div>
                     </div>
                 </section>
-
-                {/* SECCIÓN DE CONTACTO (la que te hice yo) */}
-                <section className="urgente">
-                    <h2>¿Necesitas ayuda urgente?</h2>
-                    <p>Contáctanos ahora y resolveremos tu problema en el menor tiempo posible</p>
-                    <a href="tel:911234567" className="boton-verde">📞 Contactar Ahora</a>
-                </section>
-
                 <section className="contacto">
                     <h2>Contáctanos</h2>
                     <p>Estamos aquí para ayudarte. Llámanos o escríbenos para cualquier emergencia o consulta</p>

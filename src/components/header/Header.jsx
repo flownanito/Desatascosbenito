@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
-import Home from "../../pages/home/home";
-import Jobs from "../../pages/Jobs/jobs"; 
-import We from "../../pages/we/We"; 
+function Header() { 
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const Header = () => {
   return (
     <header>
       <div className="container header-top">
@@ -16,12 +14,11 @@ const Header = () => {
           </div>
         </div>
         <nav>
-          <ul>
-            <li><a href= {Home}>Inicio</a></li>
-            <li><a href= {Jobs}>Servicios</a></li>
-            <li><a href= {We}>Nosotros</a></li>
-            {/* <li><a href="#">Contacto</a></li> */}
-          </ul>
+          <nav className={`nav-buttons${menuOpen ? " open" : ""}`}>
+            <a href="/Home" onClick={() => setMenuOpen(false)}> <b>Inicio</b> </a>
+            <a href="/Advantages" onClick={() => setMenuOpen(false)}> <b>Servicios</b> </a>
+            <a href="/We" onClick={() => setMenuOpen(false)}> <b>Nosotros</b> </a>
+          </nav>
         </nav>
         <div className="phone-button">
           <a href="tel:911234567"><button>📞 911 234 567</button></a>
