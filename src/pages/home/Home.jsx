@@ -21,7 +21,7 @@ function Home() {
                             </div>
                             <div className="hero-buttons">
                                 <a href="tel:911234567"><button className="btn-primary">📞 Llamar Ahora</button></a>
-                                <button className="btn-secondary">Ver Servicios</button>
+                                <button className="btn-secondary">Ver Servicios</button>  {/* añadir ruta para que el boton funcione */} 
                             </div>
                         </div>
                         <div className="hero-cards">
@@ -90,14 +90,14 @@ function Home() {
                     <div className="contenedor">
                         <div className="info-contacto">
                             <h3>Información de Contacto</h3>
-                            <p><strong>📞 Teléfono de Emergencia</strong><br /><span className="rojo">911 234 567</span><br />Disponible 24/7</p>
+                            <p><strong>📞 Teléfono de Emergencia</strong><br /><span className="rojo">603 798 802</span><br />Disponible 24/7</p>
                             <p><strong>📍 Ubicación</strong><br />Calle Principal 123<br />Madrid, España</p>
                             <p><strong>🕒 Horarios</strong><br />Lun - Vie: 8:00 - 20:00<br />Emergencias: 24/7</p>
                             <p><strong>✉️ Email</strong><br />info@servihogarpro.es</p>
 
                             <div className="emergencia-box">
                                 <p><strong>¿Emergencia?</strong><br />Llámanos ahora para atención inmediata</p>
-                                <a href="tel:911234567" className="boton-verde">📞 911 234 567</a>
+                                <a href="tel:911234567" className="boton-verde">📞 603 798 802</a>
                             </div>
                         </div>
 

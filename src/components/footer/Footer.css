@@ -1,67 +1,88 @@
+.footer,
+.footer * {
+  background-color: #14532d !important; /* Fuerza fondo verde en todo */
+  color: white;                         /* Texto blanco */
+}
+
 .footer {
-  background-color: #14532d;
-  color: white;
   padding: 40px 20px;
   font-family: sans-serif;
 }
 
-.footer-container {
+.footer-container{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: stretch;
   gap: 30px;
   max-width: 1200px;
   margin: auto;
+  flex-wrap: wrap;
 }
 
+
 .footer-section {
-  flex: 1 1 250px;
-  background-color: #14532d;
+  flex: 1;
+  min-width: 220px;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .logo-icon {
-  background: rgb(99, 77, 77);
-  color: 14532d;
+  background: rgb(99, 77, 77) !important; /* Se mantiene el marrón podrio */
+  color: white !important;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
 }
 
 .brand p {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.servicees{
+  padding: 0rem 0rem;
 }
 
 .footer-section h4 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 6px;
 }
 
 .footer-section ul {
   list-style: none;
+  margin: 0;
   padding: 0;
   font-size: 14px;
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .footer-section ul li a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
 .footer-bottom {
-  border-top: 1px solid #ccc;
-  background-color: #14532d;
+  border-top: 1px solid rgba(255,255,255,0.3);
   margin-top: 30px;
   padding-top: 20px;
   display: flex;
@@ -69,13 +90,14 @@
   align-items: center;
   font-size: 13px;
   text-align: center;
+  color: rgba(255,255,255,0.8);
 }
 
 .footer-bottom p {
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
-/* Responsive */
+/* 🔧 Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -83,11 +105,11 @@
     text-align: center;
   }
 
-  .footer-section {
-    max-width: 100%;
-  }
-
   .logo {
     justify-content: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
   }
 }
