@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+// ...existing code...
 import "./Advantages.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import desinfeccion from "../../assets/desinfeccion.jpg";
 import suministrodeagua from "../../assets/suministrodeagua.jpg";
-import images2 from "../../assets/images2.png";
+import imagen3 from "../../assets/imagen3.jpeg";
 
-const images = [images2, suministrodeagua, desinfeccion];
+const images = [imagen3, suministrodeagua, desinfeccion];
 function Advantages() {
   const [index, setIndex] = useState(0);
 
@@ -19,9 +20,7 @@ function Advantages() {
 
   const moveSlide = (step) => {
     setIndex(i => (i + step + images.length) % images.length);
-  };
-
-  const noticias = [
+  }; const noticias = [
     {
       id: 1,
       titulo: " COMPROMETIDOS CON NUESTRA GENTE, AYER Y SIEMPRE ",
@@ -38,7 +37,7 @@ function Advantages() {
       id: 3,
       titulo: " LA OPINIÓN DE NUESTROS CLIENTES, NUESTRA MEJOR CARTA DE PRESENTACIÓN ",
       descripcion: "A lo largo de los años, en Desatascos Benito hemos tenido la suerte de trabajar con vecinos, empresas y ayuntamientos de diferentes rincones de Gran Canaria. Todos coinciden en algo: la confianza, la rapidez y la profesionalidad con la que resolvemos cada situación.",
-      imagen: images2 ,
+      imagen: imagen3,
     },
   ];
 
@@ -109,4 +108,4 @@ function Advantages() {
   );
 }
 
-export default Advantages;
+export default Advantages; 
